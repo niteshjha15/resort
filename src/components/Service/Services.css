@@ -1,0 +1,24 @@
+.text-services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service{
+    text-align: center;
+    background-color: #bdbdbd;
+    margin-top: 0;
+    padding-top: 1rem;
+}
+.service hr{
+    width: 8rem;
+    height: 0.2rem;
+    background-color: #ff5722;
+}
+ @media screen and (max-width:440px){
+     .text-services{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+ }

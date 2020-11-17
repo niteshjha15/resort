@@ -1,0 +1,73 @@
+.form-wrap{
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background-color: #82b1ff ;
+    background-image: url("https://images.pexels.com/photos/2941017/pexels-photo-2941017.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.user-form{
+    margin-top: 3rem;
+    margin-left: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3rem;
+}
+.user-btn{
+    margin-top: 5rem;
+    width: 10rem;
+    height: 5vh;
+    border: none;
+    border-bottom: 2px solid green;
+    outline: none;
+    border-radius: 1rem;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #8C6224,#ffe0b2);
+    filter: drop-shadow(3px 3px 3px #757575);
+}
+.interface{
+    border: none;
+    height: 2rem;
+    width: 20rem;
+    border-bottom: 2px solid blue;
+    outline: none;
+    filter: drop-shadow(3px 3px 3px #757575);
+}
+.email{
+    display: flex;
+    align-items: center;
+    margin-right: 0.4rem;
+}
+.date{
+    display: flex;
+    flex-direction: column;
+}
+.picker{
+    padding-top: 0.5rem;
+}
+.form-wrap h3{
+    color: white;
+}
+.user-label{
+    color: white;
+}
+@media screen and  (max-width:440px){
+    .user-form{
+        margin-top: 3rem;
+        margin-left: 3rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+    }
+    .form-wrap{
+        height: 120vh;
+    }
+    .form-wrap h3{
+        margin-left: 3rem;
+    }
+
+}

@@ -1,0 +1,215 @@
+
+.resort-img-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 0;
+    padding-top: 0;
+}
+.main{
+    padding: 0rem;
+    margin: 0rem;
+}
+.dark{
+    width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+}
+.item{
+    display: flex;
+    justify-content: space-between;
+    background-color: #e57373;
+    filter: drop-shadow(3px 3px 3px #ef5350);
+}
+.logo a{
+    margin-top: 0.5rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: white;
+}
+.item ul{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    color: white !important;
+}
+.item ul li {
+    margin-right: 5rem;
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+.item ul li a {
+    color: wheat;
+    list-style: none;
+}
+.beach{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70vh !important;
+    margin-right: 1rem;
+    pointer-events: none;
+}
+.button{
+    display: none;
+}
+.img-text{
+    /* display: flex;
+    flex-direction: column; */
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45rem;
+    height: 40vh;
+    background-color: rgba(0,0,0,0.5)
+}
+.img-text h1{
+    margin-bottom: 0.5rem;
+    font-size: 3rem;
+}
+.img-text hr{
+    width: 8rem;
+    margin-top: 0;
+    color: #c62828;
+}
+.beach{
+    margin-left: 0.8rem !important;
+}
+.btn{
+    width: 8rem;
+    height: 5vh;
+    background-color: #ab47bc ;
+    border: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    margin-top: 3rem;
+    cursor: pointer;
+    transition: 0.1s all ease;
+}
+.btn:hover{
+    background-color: #9c27b0;
+    filter: drop-shadow(2px 2px 2px #4a148c);
+}
+.img-text p {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+.room-btn{
+    width: 8rem;
+    height: 6vh;
+    background: linear-gradient(to bottom, #795548, white);
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+.room-btn:hover{
+    background: linear-gradient(to bottom, #4e342e, white);
+    color: white;
+}
+.item ul li a{
+    text-decoration: none;
+}
+@media screen and (max-width:440px){
+    .resort-img-container{
+        position: relative;
+        height: 40vh;
+        margin-top: 0;
+        width: 100vw;
+        pointer-events: all;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .logo{
+        margin-left: 0.5rem;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .mobile a{
+        text-decoration: none;
+    }
+    .img-text p {
+        margin-bottom: 0rem;
+    }
+    .btn{
+        margin-top: 0rem;
+    }
+    .button{
+        margin-top: 0.9rem;
+        margin-right: 0.5rem;
+    }
+    .beach{
+        position: absolute;
+        top: 0;
+        width: 100vw;
+        height: 45vh;
+        margin-top: 0;
+        margin-left: 0rem !important;
+        pointer-events: none;
+    }
+    .img-text{
+        width: 25rem !important;
+        height: 22vh;
+    }
+    .img-text h1{
+        font-size: 2.5rem;
+    }
+    .mobile{
+        width: 100%;
+        height: 25vh;
+        background-color: rosybrown;
+        text-align: center;
+        z-index: 1;
+        transition: 0.5s all ease;
+        display: block;
+        font-size: 1.2rem;
+        padding-bottom: 0.5rem;
+        list-style: none;
+    }
+    .mobile a {
+        list-style: none !important;
+    }
+    .main h3{
+        color: black !important;
+        list-style: none;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        z-index: 3;
+        pointer-events: all;
+    }
+    .button{
+        display: block;
+        cursor: pointer;
+        transition: 0.2s all ease;
+    }
+    .button:hover{
+        filter: drop-shadow(1.5px 1.5px 1.5px black);
+    }
+    .btn{
+        margin-top: 3rem;
+    }
+    .item ul{
+        display: none;
+    }
+    .item{
+        height: 8vh;
+        margin-bottom: 0.2rem;
+    }
+    .room-btn{
+        margin-top: 1rem !important;
+    }
+}

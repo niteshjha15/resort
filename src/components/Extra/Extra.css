@@ -1,0 +1,39 @@
+.extra-wrap{
+    margin-top: 1rem;
+    width: 100%;
+    height: 25vh;
+    background-color: #FFFFFF;
+    filter: drop-shadow(3px 3px 3px #424242);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.direct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.book{
+    text-align: center;
+    border-right: 3px solid black;
+    height: 18vh;
+}
+.book h1{
+    margin-right: 3rem;
+}
+
+@media screen and (max-width:440px){
+    .book{
+        display: none;
+    }
+    .extra-wrap{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: 40vh;
+        margin-top: 1rem;
+        margin-bottom: 2rem;
+    }
+    .direct{
+        font-size: 0.8rem !important;
+    }
+}

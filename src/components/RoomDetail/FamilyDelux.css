@@ -1,0 +1,122 @@
+.beach-img{
+    width: 100%;
+    height: 70vh;
+}
+.frame{
+    display: flex;
+    flex-direction: column;
+}
+.frame-two{
+    display: flex;
+    justify-content: space-around;
+}
+.first-img,.second-img, .third-img{
+    width: 20rem;
+    height: 40vh;
+    filter: drop-shadow(3px 3px 3px #607d8b );
+}
+.room-desc{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    grid-gap: 5rem;
+    margin-left: 4rem;
+    margin-top: 3rem;
+}
+.desc > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    justify-content: space-evenly;
+}
+.extras{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #bdbdbd;
+}
+.extras h1{
+    background-color: #757575;
+    width: 100%;
+    text-align: center;
+    filter: drop-shadow(3px 3px 3px #424242);
+}
+.extras ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+.frame-three{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #b0bec5;
+}
+.info{
+    text-align: center;
+}
+.info  h2{
+    background-color: #607d8b;
+    filter: drop-shadow(3px 3px 3px #607d8b);
+    width: 100vw;
+    text-align: center;
+}
+.info ul li {
+    list-style: none;
+    font-size: 1.5rem;
+}
+.home-btn{
+    width: 8rem;
+    height: 6vh;
+    background: linear-gradient(to bottom, #795548, white);
+    transition: 0.2s all ease;
+    cursor: pointer;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+.home-btn:hover{
+    background: linear-gradient(to bottom, #4e342e, white);
+    color: white;
+}
+
+@media screen and (max-width: 440px){
+    .frame{
+        overflow-x: hidden;
+    }
+    .frame-two{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .room-desc{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0.2rem;
+        margin-left: 0rem;
+    }
+    .desc{
+        background-color: #e8f5e9;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        filter: drop-shadow(3px 3px 3px #a5d6a7 );
+    }
+    .beach-img{
+        width: 100%;
+        height: 45vh;
+    }
+    .frame-one{
+        position: relative;
+    }
+    .img-text{
+        position: absolute;
+        top: 45%;
+    }
+    .home-btn{
+        margin-top: 1rem;
+    }
+    .text{
+        margin-left: 0.8rem;
+        margin-right: 0.3rem;
+    }
+}

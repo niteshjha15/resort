@@ -1,0 +1,21 @@
+.main{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(20rem,1fr));
+}
+.main-wrap{
+    text-align: center;
+}
+.main-wrap hr{
+    width: 8rem;
+    height: 0.2rem;
+    background-color: #ff5722;
+}
+@media screen and (max-width: 440px){
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 1rem !important;
+        overflow: hidden;
+    }
+}

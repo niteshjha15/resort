@@ -1,0 +1,98 @@
+.featured-imges{
+    width: 30vw;
+    height: 40vh;
+    border-radius: 0.5rem;
+}
+.feat-name{
+    text-align: center;
+    margin: 0 auto;
+    background-color: #e1bee7 ;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
+.feat-box{
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(4px 4px 4px #263238);
+    cursor: pointer;
+    margin-right: 1rem;
+}
+.feat-box h5{
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    font-size: 1.3rem;
+    background-color: #ffcdd2;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+.feat-cover{
+    position: absolute;
+    top: 0;
+    left: 3%;
+    width: 30vw;
+    height: 40vh;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.3s all ease;
+    pointer-events: none;
+    z-index: 1;
+    border-radius: 0.5rem;
+}
+.feat-box:hover .feat-cover{
+    opacity: 1;
+}
+.feat-btn{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    letter-spacing: 3px;
+    background: linear-gradient(to bottom, #795548, white);
+    cursor: pointer;
+    z-index: 2;
+    opacity: 0;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+}
+.feat-btn{
+    width: 8rem;
+    height: 6vh;
+}
+.feat-box:hover .feat-btn{
+    opacity: 1;
+}
+.feat-btn-phn{
+    display: none;
+}
+@media screen and (max-width: 440px){
+    .featured-imges{
+        width: 100%;
+        pointer-events: all;
+        z-index: 5;
+    }
+    .feat-box{
+        margin-bottom: 1rem;
+        margin-left: 1rem;
+    }
+    .feat-cover, .feat-btn{
+        display: none;
+        pointer-events: none;
+    }
+    .feat-btn-phn{
+        position: absolute;
+    top: 65%;
+    left: 0%;
+    letter-spacing: 3px;
+    height: 5vh;
+    width: 90%;
+    margin: 0 auto;
+    background: linear-gradient(to bottom, #795548, white);
+    cursor: pointer;
+    z-index: 2;
+    opacity: 1;
+    border: none;
+    border-radius: 1rem;
+    outline: none;
+    }
+}
